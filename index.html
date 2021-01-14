@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="es" class="no-js">
   <head>
@@ -12,28 +14,23 @@
       
         <meta name="author" content="Víctor R. Ruiz">
       
-      
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.0.2">
     
     
       
-        <title>Introducción a p5: Programación gráfica fácil con Python - P5, programación gráfica con Python</title>
+        <title>Introducción a p5: Programación gráfica fácil con Python</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.c1a4d03f.min.css">
       
-        
-        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
-        
       
     
     
     
       
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -47,15 +44,8 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
-      
+    <body dir="">
   
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -71,58 +61,54 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Cabecera">
     <a href="." title="P5, programación gráfica con Python" class="md-header-nav__button md-logo" aria-label="P5, programación gráfica con Python">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
-          <span class="md-ellipsis">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             P5, programación gráfica con Python
           </span>
-        </div>
-        <div class="md-header-nav__topic">
-          <span class="md-ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             
               Introducción a p5: Programación gráfica fácil con Python
             
           </span>
         </div>
-      </div>
+      
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
       </label>
       <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
       </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Teclee para comenzar búsqueda
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -150,6 +136,8 @@
     
     <div class="md-container" data-md-component="container">
       
+        
+      
       
         
       
@@ -157,21 +145,15 @@
         <div class="md-main__inner md-grid">
           
             
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
-
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="P5, programación gráfica con Python" class="md-nav__button md-logo" aria-label="P5, programación gráfica con Python">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
 
     </a>
     P5, programación gráfica con Python
@@ -196,7 +178,6 @@
       
       
 
-
   
 
 
@@ -209,10 +190,12 @@
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Home
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
       </label>
     
-    <a href="." class="md-nav__link md-nav__link--active">
+    <a href="." title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
     
@@ -224,7 +207,9 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
       Tabla de contenidos
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -373,8 +358,7 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -385,7 +369,9 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
       Tabla de contenidos
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -533,8 +519,11 @@
               
                 
                   <a href="https://github.com/vrruiz/p5-tutorial/edit/master/docs/index.md" title="Editar esta página" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
+                
+                
+                  
                 
                 
                 <h1 id="introduccion-a-p5-programacion-grafica-facil-con-python">Introducción a p5: Programación gráfica fácil con Python</h1>
@@ -568,6 +557,7 @@
 <span class="n">run</span><span class="p">()</span>               <span class="c1"># Ejecutar p5</span>
 </code></pre></div>
 </td></tr></table>
+
 <p><img alt="Programa básico de p5." src="img/p5-02-basico.png" /></p>
 <p>Lo que hace <code>run()</code> es llamar una sola vez a la función <code>setup()</code>. Luego, entra en un bucle infinito en el que se llamada a la función <code>draw()</code> 60 veces cada segundo.</p>
 <p>Generalmente, querremos hacer más cosas. Vamos a hacer un ejemplo más interesante. El siguiente programa crea una ventana de 500 píxeles de largo 500 píxeles de ancho y selecciona el color blanco para los trazos. Luego entra en un bucle infinito que pinta el fondo de la ventana de gris y dibuja una línea desde el centro de la ventana hasta la posición actual del cursor del ratón.</p>
@@ -594,6 +584,7 @@
 <span class="n">run</span><span class="p">()</span>                               <span class="c1"># Ejecutar programa</span>
 </code></pre></div>
 </td></tr></table>
+
 <p><img alt="Sigue el cursor del ratón" src="img/p5-03-linea.png" /></p>
 <p>Ahora usamos varias funciones de dibujo:</p>
 <ul>
@@ -673,6 +664,7 @@
 <span class="n">run</span><span class="p">()</span>                        <span class="c1"># Ejecutar programa</span>
 </code></pre></div>
 </td></tr></table>
+
 <p><img alt="Sigue el cursor del ratón" src="img/p5-04-ancho-largo.png" /></p>
 <p>El programa es bastante similar al anterior, pero en este caso, las coordenadas del centro de la ventana se calculan automáticamente.</p>
 <h2 id="colores">Colores</h2>
@@ -690,6 +682,7 @@
 <span class="n">background</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">127</span><span class="p">)</span>  <span class="c1"># Fondo azul, semi-transparente</span>
 </code></pre></div>
 </td></tr></table>
+
 <p>Antes dibujamos una línea, ¿dónde especifiacamos el color de su trazo? Hay dos funciones que debemos llamar antes para indicar los colores tanto el trazo como del relleno de las figuras.</p>
 <ul>
 <li><code>stroke(color)</code>. Define el color del trazo.</li>
@@ -705,6 +698,7 @@
 <span class="n">rect</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">75</span><span class="p">)</span>  <span class="c1"># Dibujar rectángulo</span>
 </code></pre></div>
 </td></tr></table>
+
 <p>Estas funciones se pueden encadenar para dibujar varias figuras con diferentes colores.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -717,6 +711,7 @@
 <span class="n">rect</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">80</span><span class="p">)</span>  <span class="c1"># Otro rectángulo</span>
 </code></pre></div>
 </td></tr></table>
+
 <h2 id="figuras-basicas">Figuras básicas</h2>
 <p>Bueno, aunque ya hemos visto cómo usar dos figuras en p5, vamos a poner aquí otras más:</p>
 <ul>
@@ -791,6 +786,7 @@
 <span class="n">run</span><span class="p">()</span>                                       <span class="c1"># Ejecutar programa</span>
 </code></pre></div>
 </td></tr></table>
+
 <p><img alt="Mostrar un texto." src="img/p5-05-texto.png" /></p>
 <h2 id="interaccion">Interacción</h2>
 <p>Para reaccionar a acciones realizadas por los usuarios, los programas con interfaz gráfico deben leer los estados y eventos del teclado y ratón. p5 no es menos, y lo hace bastante sencillo.</p>
@@ -834,6 +830,7 @@
 <span class="n">run</span><span class="p">()</span>                               <span class="c1"># Ejecutar programa</span>
 </code></pre></div>
 </td></tr></table>
+
 <h3 id="teclado">Teclado</h3>
 <p>La lógica del teclado es similar a la del ratón. Hay funciones para saber si se ha pulsado alguna tecla y otra para saber qué tecla ha sido.</p>
 <ul>
@@ -973,47 +970,48 @@
 <span class="n">run</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
+
 <p><img alt="Movimiento de un cursor con el ratón." src="img/p5-06-camino.png" /></p>
 <h2 id="como-instalar-p5-en-linux">Cómo instalar p5 en Linux</h2>
 <h3 id="debian-ubuntu-raspberry-pi-os">Debian, Ubuntu, Raspberry Pi OS</h3>
 <p>De momento, p5py no está empaquetado en Debian, lo que significa que tampoco está disponible en las distribuciones derivadas como Ubuntu y Raspberry Pi OS.</p>
 <p>Lo primero que hay que hacer es asegurarse de que el paquete python3-pil no está instalado, dado que entra en conflicto con otras librerías que p5 necesita instalar.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>$ sudo apt-get remove python3-pil
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>$ sudo apt-get remove python3-pil
 </code></pre></div>
 </td></tr></table>
-<!--
+&lt;!--
 Los siguientes paquetes se ELIMINARÁN:
-  hplip mu-editor python3-guizero python3-pil python3-pil.imagetk python3-reportlab python3-sense-emu python3-sense-hat sense-emu-tools sense-hat
-
-libf77blas.so.3: cannot open shared file: no such file or directory
-sudo apt-get install libatlas-base-dev
-
-RuntimeError: Could not import backend "Glfw"
-sudo apt install libglfw3
-
-OpenGL.error.NullFunctionError: Attempt to call an undefined function gluNewTess, check for bool(gluNewTess) before calling
+  hplip mu-editor python3-guizero python3-pil python3-pil.imagetk python3-reportlab python3-sense-emu python3-sense-hat sense-emu-tools sense-hat</p>
+<p>libf77blas.so.3: cannot open shared file: no such file or directory
+sudo apt-get install libatlas-base-dev</p>
+<p>RuntimeError: Could not import backend "Glfw"
+sudo apt install libglfw3</p>
+<p>OpenGL.error.NullFunctionError: Attempt to call an undefined function gluNewTess, check for bool(gluNewTess) before calling
 apt-get install freeglut3-dev
--->
-
+--&gt;</p>
 <p>A continuación, instalamos algunas librerías necesarias:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>$ sudo apt-get install libjpeg-dev libfreetype6 libfreetype6-dev <span class="se">\</span>
   zlib1g-dev libatlas-base-dev libglfw3 freeglut3-dev
 </code></pre></div>
 </td></tr></table>
+
 <p>Y finalmente, instalamos p5:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>$ pip3 install p5
 </code></pre></div>
 </td></tr></table>
+
 <h3 id="fedora">Fedora</h3>
 <p>Primero hay que instalar las dependencias</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>$ sudo dnf install glfw
 </code></pre></div>
 </td></tr></table>
+
 <p>Y finalmente, instalamos p5:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>$ pip3 install p5
 </code></pre></div>
 </td></tr></table>
+
 <h2 id="problemas-conocidos">Problemas conocidos</h2>
 <p>Processing, el original, es un proyecto maduro mientras que p5 aún está en desarrollo activo. Algunos de los problemas que he encontrado hasta ahora son:</p>
 <ul>
@@ -1077,15 +1075,15 @@ apt-get install freeglut3-dev
       
     </div>
     
-      <script src="assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta"}</script>
+      <script src="assets/javascripts/vendor.606193c2.min.js"></script>
+      <script src="assets/javascripts/bundle.b90b6d1d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "", "search.config.separator": "", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
       
       <script>
         app = initialize({
           base: ".",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "assets/javascripts/worker/search.7f7c8775.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
